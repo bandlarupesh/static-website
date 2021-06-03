@@ -14,19 +14,15 @@
   justify-content: space-between;
   margin: 0 30px;
 }
-
-.vip-text,
-.cam-girls-text {
-  font-size: 24px;
-  font-weight: 600;
-  padding-right: 5px;
-}
-
 .vip-text {
+  width: 36px;
   color: #e49f24;
+  font: normal normal 600 31px/45px "Barlow Condensed";
 }
 
 .cam-girls-text {
+  width: 100px;
+  font: normal normal normal 31px/45px "Barlow Condensed";
   color: #cccccc;
 }
 
@@ -41,12 +37,15 @@
   color: black;
   margin: 4px 2px;
   transition-duration: 0.3s;
+  font: normal normal bold 12px/13px "Quattrocento Sans";
+  letter-spacing: 2.4px;
 }
 
 .login {
   background-color: transparent;
   color: #e49f24;
   border: 1px solid #e49f24;
+  opacity: 1;
 }
 
 .login:hover {
@@ -93,115 +92,82 @@
 }
 
 .welcome-text {
-  font-size: 16px;
+  top: 270px;
+  font: normal normal normal 18px/20px "Quattrocento Sans";
+  letter-spacing: 1.8px;
   text-align: left;
   margin-left: 60px;
-  letter-spacing: 1.8px;
   color: #d6d6d6;
   text-transform: uppercase;
   opacity: 0.5;
 }
-
-.char-t,
-.char-e,
-.char-a,
-.char-c,
-.char-h,
-.char-e,
-.char-r,
-.char-s {
+.teacher-text span {
   font-size: 100px;
   font-weight: bold;
-  color: white;
-  background-repeat: no-repeat;
-  background-blend-mode: normal;
+  color: gainsboro;
+  background-repeat: repeat;
   margin-left: 8px;
-}
-.char-t {
-  background-image: url("assets/image1.png");
-}
-
-.char-e {
-  background-image: url("assets/image2.png");
-}
-
-.char-a {
-  background-image: url("assets/image3.png");
-}
-
-.char-c {
-  background-image: url("assets/image4.png");
-}
-
-.char-h {
-  background-image: url("assets/image1.png");
-}
-
-.char-e {
-  background-image: url("assets/image2.png");
-}
-
-.char-r {
-  background-image: url("assets/image3.png");
-}
-.char-s {
-  background-image: url("assets/image6.png");
+  background: url("assets/image8.png");
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
 }
 
 .portal {
-  font: normal normal 900 100px/110px Barlow;
+  font: normal normal 900 146px/120px Barlow;
   color: #f0a500;
   text-transform: uppercase;
   margin-left: 80px;
   text-align: left;
 }
+
 .container {
   position: relative;
   float: left;
-  height: 264px;
   width: 264px;
-  padding: 5px;
 }
 
 .col-img {
   position: absolute;
-  height: 250px;
-  width: 254px;
 }
 
-.button {
-  position: absolute;
-  width: 220px;
-  top: 214px;
-  text-align: center;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-
-.button button {
+.banner-div {
   width: 248px;
-  padding: 12px 48px;
+  padding: 12px 10px;
   text-align: center;
   color: black;
-  background-color: #f0a500;
   border: none;
+  opacity: 0;
+  padding-bottom: 0;
 }
-
-.container:hover .button {
+.container:hover .banner-div {
   opacity: 1;
+  background-color: transparent;
 }
 
-.exclusive span {
+.exclusive {
   top: 10px;
   left: 16px;
+  width: 80px;
   height: 20px;
+  background: #ff7b00 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 0 5px;
+  position: absolute;
+}
+h5 {
+  margin: 2px;
+  width: 58px;
+  height: 20px;
+  font-family: "Teko";
+  font-size: 14px;
+  font-weight: normal;
+  font-variant: normal;
+  letter-spacing: 1.4px;
   color: #181310;
   text-transform: uppercase;
   opacity: 1;
-  position: absolute;
-  background: #ff7b00;
-  padding: 2px;
-  border-radius: 0 5px;
+  background: transparent;
 }
 .tokens-subheader {
   display: flex;
@@ -215,16 +181,19 @@
 /* image carousel styles*/
 
 .online-teacher {
-  margin: 20px 100px;
-  font: normal normal bold 36px/20px Barlow Condensed;
+  font: normal normal bold 36px/100px Barlow Condensed;
+  letter-spacing: 3.6px;
   color: #f0a500;
   text-transform: uppercase;
   opacity: 1;
 }
 
 .image-carousel {
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
+}
+.image-carousel::-webkit-scrollbar {
+  width: 0;
 }
 .image-carousel,
 .gallery img {
@@ -263,6 +232,8 @@
   background: transparent;
 }
 .btn-private {
+  font: normal normal bold 14px/16px Quattrocento Sans;
+  letter-spacing: 1.4px;
   border: none;
   outline: 0;
   display: inline-block;
@@ -278,10 +249,14 @@
 .teacher-name {
   color: white;
   background: transparent;
+  font: normal normal bold 16px/117px Quattrocento Sans;
+  letter-spacing: 0.8px;
 }
 .teacher-token {
   color: #f0a500;
   background: transparent;
+  font: normal normal bold 16px/117px Quattrocento Sans;
+  letter-spacing: 0.8px;
 }
 
 .gallery img {
@@ -297,23 +272,20 @@
   display: flex;
   justify-content: space-around;
   position: relative;
-  top: -60px;
+  top: -115px;
   background: transparent;
 }
 
 /* gallery images styles */
 
-.gallery-section {
-  margin: 50px;
-}
-
 .column-img {
   height: 300px;
-  width: 264px;
+  width: 260px;
 }
 
 .featured-text {
   font: normal normal bold 36px/40px Barlow Condensed;
+  letter-spacing: 3.6px;
   color: #f0a500;
   text-transform: uppercase;
   opacity: 1;
@@ -326,7 +298,7 @@
 .column img {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 8px;
 }
 div.column {
   float: left;
@@ -342,7 +314,7 @@ div.column {
 }
 
 .pvt-btn {
-  margin-top: -60px;
+  margin-top: -156px;
 }
 
 .column img {
@@ -366,6 +338,8 @@ div.column {
   border: 1px solid #f0a500;
   opacity: 1;
   text-transform: uppercase;
+  font: normal normal bold 12px/13px Quattrocento Sans;
+  letter-spacing: 2.4px;
 }
 
 .show-btn:hover {
@@ -384,6 +358,10 @@ div.column {
   opacity: 1;
 }
 
+section {
+  margin: 80px;
+}
+
 @media screen and (max-width: 600px) {
   .column.side,
   .column.right {
@@ -393,21 +371,6 @@ div.column {
   .left {
     margin-top: 50px;
   }
-  .char-t,
-  .char-e,
-  .char-a,
-  .char-c,
-  .char-h,
-  .char-e,
-  .char-r,
-  .char-s {
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    background-repeat: no-repeat;
-    background-blend-mode: normal;
-    margin-left: 4px;
-  }
 
   .portal {
     font: normal normal 900 50px/50px Barlow;
@@ -415,5 +378,19 @@ div.column {
     text-transform: uppercase;
     margin-left: 40px;
     text-align: left;
+  }
+  .teacher-text span {
+    font-size: 50px;
+    font-weight: bold;
+    color: gainsboro;
+    background-repeat: repeat;
+    margin-left: 8px;
+    background: url("assets/image8.png");
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+  }
+  section{
+    margin:10px
   }
 }
