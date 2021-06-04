@@ -386,9 +386,9 @@ section {
     width: 100%;
   }
 
-  .left {
+  /* .left {
     margin-top: 50px;
-  }
+  } */
 
   .portal {
     font: normal normal 600 50px/50px Barlow;
@@ -396,9 +396,13 @@ section {
     text-transform: uppercase;
   }
   .teacher-text {
-    font-size: 50px;
+    font-size: 60px;
   }
   section {
     margin: 10px;
+  }
+  .banner.right {
+    width: 100%;
+    float: left;
   }
 }
