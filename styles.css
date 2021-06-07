@@ -79,19 +79,12 @@
 .banner.left {
   width: 50%;
   overflow-wrap: break-word;
+  padding-top: 200px;
 }
-.left {
-  padding-top: 210px;
-}
+
 
 .banner.right {
   width: 50%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .welcome-text {
@@ -102,7 +95,7 @@
   opacity: 0.5;
 }
 .teacher-text {
-  font-size: 117px;
+  font-size: 100px;
   font-weight: bold;
   color: gainsboro;
   background-repeat: no-repeat, repeat;
@@ -161,14 +154,16 @@ h5 {
   opacity: 1;
   background: transparent;
 }
-/* .tokens-subheader {
-  display: flex;
-  justify-items: center;
-  justify-content: space-around;
-  position: absolute;
-  top: 170px;
-  background: transparent;
-} */
+
+.container img {
+  transition: transform 0.2s ease;
+}
+
+.container img:hover {
+  -ms-transform: scale(1.025);
+  -webkit-transform: scale(1.025);
+  transform: scale(1.025);
+}
 
 /* image carousel styles*/
 
@@ -238,19 +233,6 @@ h5 {
   width: 264px;
 }
 
-/* .teacher-name {
-  color: white;
-  background: transparent;
-  font: normal normal bold 16px/117px Quattrocento Sans;
-  letter-spacing: 0.8px;
-}
-.teacher-token {
-  color: #f0a500;
-  background: transparent;
-  font: normal normal bold 16px/117px Quattrocento Sans;
-  letter-spacing: 0.8px;
-} */
-
 .gallery img {
   transition: transform 0.2s ease;
 }
@@ -260,13 +242,6 @@ h5 {
   -webkit-transform: scale(1.025);
   transform: scale(1.025);
 }
-/* .tokens {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: -115px;
-  background: transparent;
-} */
 
 /* gallery images styles */
 
@@ -325,10 +300,6 @@ h3.token {
   font: normal normal normal 12px/80px Quattrocento Sans;
 }
 
-/* .pvt-btn {
-  margin-top: -156px;
-} */
-
 .column img {
   transition: transform 0.2s ease;
 }
@@ -380,15 +351,17 @@ section {
 /*  */
 
 
-@media screen and (max-width: 900px) and (min-width:600px) {
-  .column.side,
-  .column.right {
+@media screen and (max-width: 900px) and (min-width:480px) {
+  .banner.left {
     width: 100%;
+    overflow-wrap: normal;
+    padding-top: 30px;
   }
 
-  /* .left {
-    margin-top: 50px;
-  } */
+  .banner-section{
+    margin:0;
+    text-align: center;
+  }
 
   .portal {
     font: normal normal 600 50px/50px Barlow;
@@ -399,10 +372,9 @@ section {
     font-size: 60px;
   }
   section {
-    margin: 10px;
+    margin: 4px;
   }
   .banner.right {
     width: 100%;
-    float: left;
   }
 }
