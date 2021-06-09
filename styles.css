@@ -168,9 +168,6 @@ h5 {
 }
 
 .container img {
-  width: 100%;
-  top: 0;
-  left: 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -197,7 +194,7 @@ h5 {
 
 /* image carousel styles*/
 
-.online-teacher-div{
+.online-teacher-div {
   margin-left: 40px;
 }
 
@@ -294,9 +291,6 @@ h3.token {
 }
 
 .gallery img {
-  width: 100%;
-  top: 0;
-  left: 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -344,9 +338,6 @@ h3.token {
 }
 
 .column img {
-  width: 100%;
-  top: 0;
-  left: 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -400,7 +391,7 @@ section {
 
 /*  */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .banner.left {
     width: 100%;
     overflow-wrap: normal;
@@ -413,7 +404,7 @@ section {
   }
 
   .portal {
-    font: normal normal 900 60px/54px Barlow;
+    font: normal normal 900 80px/54px Barlow;
     color: #f0a500;
     text-transform: uppercase;
   }
@@ -425,6 +416,7 @@ section {
   }
   .banner.right {
     width: 100%;
+    margin-top: 20px;
   }
 
   .featured-text {
@@ -480,8 +472,8 @@ section {
     margin: 4px;
   }
 
-  .online-teacher-div{
-    margin:10px;
+  .online-teacher-div {
+    margin: 10px;
   }
 
   .online-teacher {
@@ -554,14 +546,14 @@ section {
   }
 
   .portal {
-    font: normal normal 600 30px/40px Barlow;
+    font: normal normal 900 50px/40px Barlow;
   }
   .teacher-text {
     font-size: 40px;
   }
 
   .banner.right {
-    margin: 0 30px;
+    margin: 10px 30px;
   }
 
   .gallery-section .column {
