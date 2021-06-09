@@ -67,23 +67,23 @@
   transition: 0.3s;
 }
 
-/* section1 styles */
+/* banner section styles */
 
 .banner-section {
-  margin: 0 50px;
+  margin: 0 60px;
 }
 
 .banner {
   float: left;
 }
 .banner.left {
-  width: 50%;
+  width: 55%;
   overflow-wrap: break-word;
-  padding-top: 200px;
+  padding-top: 180px;
 }
 
 .banner.right {
-  width: 50%;
+  width: 45%;
 }
 
 .welcome-text {
@@ -94,21 +94,20 @@
   opacity: 0.5;
 }
 .teacher-text {
-  font-size: 110px;
-  letter-spacing: 6px;
+  font-size: 116px;
+  letter-spacing: 8px;
   font-weight: bold;
   color: gainsboro;
   background-repeat: no-repeat, repeat;
-  margin-left: 8px;
-  background: url("assets/image7.png");
+  background: url("assets/image9.png");
   -webkit-background-clip: text;
   text-transform: uppercase;
   -webkit-text-fill-color: transparent;
 }
 
 .portal {
-  font: normal normal 900 146px/120px Barlow;
-  letter-spacing: 14.6px;
+  font: normal normal 900 140px/120px Barlow;
+  letter-spacing: 12px;
   color: #f0a500;
   text-transform: uppercase;
 }
@@ -133,12 +132,7 @@
   transform: translate(0px, 70px);
   -webkit-transform: translate(0px, 70px);
   -moz-transform: translate(0px, 70px);
-  -o-transform: translate(0px, 70px);
-  -ms-transform: translate(0px, 70px);
   -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .container:hover .banner-btn {
@@ -146,17 +140,16 @@
   transform: translate(0px, 0px);
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
 }
 
 .exclusive {
   top: 0px;
   left: 16px;
   height: 20px;
+  padding: 2px;
   background: #ff7b00 0% 0% no-repeat padding-box;
   opacity: 1;
-  border-radius: 0 5px;
+  border-radius: 0 0 5px 5px;
   position: absolute;
 }
 h5 {
@@ -166,6 +159,7 @@ h5 {
   font-size: 14px;
   font-weight: normal;
   font-variant: normal;
+  /* font: normal normal medium 14px/103px Teko; */
   letter-spacing: 1.4px;
   color: #181310;
   text-transform: uppercase;
@@ -177,25 +171,21 @@ h5 {
   width: 100%;
   top: 0;
   left: 0;
-  -webkit-transition: all 4s ease;
-  -moz-transition: all 4s ease;
-  -o-transition: all 4s ease;
-  -ms-transition: all 4s ease;
-  transition: all 4s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .container img:hover {
-  -ms-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 .container h3 {
   position: absolute;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -203,11 +193,13 @@ h5 {
   transform: translate(2px, -20px);
   -webkit-transform: translate(2px, -20px);
   -moz-transform: translate(2px, -20px);
-  -o-transform: translate(2px, -20px);
-  -ms-transform: translate(2px, -20px);
 }
 
 /* image carousel styles*/
+
+.online-teacher-div{
+  margin-left: 40px;
+}
 
 .online-teacher {
   font: normal normal bold 36px/0px Barlow Condensed;
@@ -265,25 +257,25 @@ h3.token {
   height: 10px;
   width: 10px;
   background-color: #13e052;
-  border-radius: 50%;
+  border-radius: 10px;
   display: inline-block;
 }
 
 .bg-dot-online {
   background: #181310 0% 0% no-repeat padding-box;
-  border-radius: 8px;
+  border-radius: 10px;
   opacity: 0.8;
   display: inline;
+  padding: 4px;
 }
 
 .online {
   position: absolute;
   top: 0px;
-  left: 16px;
-  font: normal normal normal 12px/54px Quattrocento Sans;
+  left: 10px;
+  font: normal normal normal 12px/34px Quattrocento Sans;
   color: #13e052;
   text-transform: uppercase;
-  opacity: 1;
   background: transparent;
 }
 .btn-private {
@@ -305,17 +297,15 @@ h3.token {
   width: 100%;
   top: 0;
   left: 0;
-  -webkit-transition: all 4s ease;
-  -moz-transition: all 4s ease;
-  -o-transition: all 4s ease;
-  -ms-transition: all 4s ease;
-  transition: all 4s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .gallery img:hover {
-  -ms-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .btn {
   opacity: 1;
@@ -336,7 +326,7 @@ h3.token {
   text-align: center;
   position: relative;
   max-width: 264px;
-  margin: 10px;
+  margin: 8px;
   float: left;
   overflow: hidden;
 }
@@ -357,19 +347,17 @@ h3.token {
   width: 100%;
   top: 0;
   left: 0;
-  -webkit-transition: all 4s ease;
-  -moz-transition: all 4s ease;
-  -o-transition: all 4s ease;
-  -ms-transition: all 4s ease;
-  transition: all 4s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .column img:hover {
-  -ms-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  transform: scale(1.25);
+  -ms-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
-.column .btn{
+.column .btn {
   margin-top: -4px;
 }
 
@@ -412,7 +400,7 @@ section {
 
 /*  */
 
-@media screen and (max-width: 900px) and (min-width: 480px) {
+@media screen and (max-width: 900px) {
   .banner.left {
     width: 100%;
     overflow-wrap: normal;
@@ -425,12 +413,12 @@ section {
   }
 
   .portal {
-    font: normal normal 600 50px/50px Barlow;
+    font: normal normal 900 60px/54px Barlow;
     color: #f0a500;
     text-transform: uppercase;
   }
   .teacher-text {
-    font-size: 60px;
+    font-size: 80px;
   }
   section {
     margin: 4px;
@@ -456,15 +444,31 @@ section {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+  #header {
+    margin: 10px;
+  }
+
+  .vip-text {
+    color: #e49f24;
+    font: normal normal 600 24px/45px "Barlow", Condensed;
+    letter-spacing: 0px;
+  }
+
+  .cam-girls-text {
+    font: normal normal normal 24px/45px "Barlow", Condensed;
+    color: #cccccc;
+    letter-spacing: 0px;
+  }
+
   .banner.left {
     width: 100%;
     overflow-wrap: normal;
-    padding-top: 20px;
   }
 
   .banner.right {
     width: 100%;
+    margin-top: 20px;
   }
 
   .banner-section {
@@ -472,17 +476,12 @@ section {
     text-align: center;
   }
 
-  .portal {
-    font: normal normal 600 30px/30px Barlow;
-    color: #f0a500;
-    text-transform: uppercase;
-  }
-  .teacher-text {
-    font-size: 30px;
-  }
-
   section {
     margin: 4px;
+  }
+
+  .online-teacher-div{
+    margin:10px;
   }
 
   .online-teacher {
@@ -499,5 +498,73 @@ section {
     color: #f0a500;
     text-transform: uppercase;
     opacity: 1;
+  }
+  .login,
+  .signup {
+    width: 100px;
+  }
+
+  .container h3 {
+    top: 220px;
+  }
+
+  .container:hover h3 {
+    transform: translate(0px, 0px);
+  }
+
+  .banner-btn {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+
+  .container img:hover {
+    transform: scale(1);
+  }
+  .gallery img:hover {
+    transform: scale(1);
+  }
+  .column img:hover {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .vip-text {
+    color: #e49f24;
+    font: normal normal 600 20px/30px "Barlow", Condensed;
+    letter-spacing: 0px;
+  }
+
+  .cam-girls-text {
+    font: normal normal normal 20px/30px "Barlow", Condensed;
+    color: #cccccc;
+    letter-spacing: 0px;
+  }
+
+  .login,
+  .signup {
+    width: 80px;
+    font: normal normal bold 12px/10px Quattrocento Sans;
+    letter-spacing: 1.4px;
+  }
+
+  .welcome-text {
+    font: normal normal normal 16px/10px Quattrocento Sans;
+    letter-spacing: 1.4px;
+  }
+
+  .portal {
+    font: normal normal 600 30px/40px Barlow;
+  }
+  .teacher-text {
+    font-size: 40px;
+  }
+
+  .banner.right {
+    margin: 0 30px;
+  }
+
+  .gallery-section .column {
+    margin: 0 30px;
   }
 }
